@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    --purple: #72005F;
+    --brown: #BAA193;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* CSS da página principal */
+
+.main-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.ask-advice-div {
+    margin-right: 8rem;
+}
+
+.ask-advice-div p {
+    color: var(--brown);
+    font-size: 3.1875rem;
+    font-weight: bold;
+}
+
+.ask-advice-div h1 {
+    color: var(--purple);
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.ask-advice-div button {
+    font-size: 1.75rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    background: var(--purple);
+    width: 20rem;    
+    margin: 40px 0;
+    padding: 16px;
+    border: none;
+    border-radius: 20px;
+    transition: ease-in-out .3s;
+}
+
+.ask-advice-div button:hover {
+    transform: scale(1.050);
+    cursor: pointer;
+}
+
+/* Animation */
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.image-div img {
+    width: 50%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--purple);
+    position: fixed;
+    bottom: 0px;
+    padding: 10px 0;
+}
+
+footer p {
+    font-weight: bold;
+} 
+
+footer .footer-text {
+    color: #fff;
+}
+
+/* CSS da página de conselhos */
+
+header {
+    width: 100%;
+}
+
+header p {
+    color: var(--brown);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+header h1 {
+    color: var(--purple);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.header-content {
+    padding: 30px 50px;
+}
+
+.content-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EBE4E0;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.quote-area {
+    width: 60vw;
+    padding: 80px;
+}
+
+.quote-area p{
+    color: var(--purple);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.quote-area p:last-of-type {
+    color: var(--brown);
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-left: 9rem;
+} 
+
+.quote-photo {
+    width: 40vw;
+}
+
+img {
+    width: 40vw;
+    border-radius: 10px;
+}
